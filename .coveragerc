@@ -1,0 +1,3 @@
+[run]
+include = marta/*
+omit = *migrations*
