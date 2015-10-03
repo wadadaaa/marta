@@ -24,9 +24,25 @@
 </head>
 <body data-colorTheme="dark">
 
+<div class="preloader-block">
+	<div class="first-level wrapper pa acc ovh">
+		<div class="top-part preloader-part"></div>
+		<div class="bottom-part preloader-part"></div>
+
+		<div class="second-level wrapper pr fullheight fullwidth ovh">
+			<div class="top-part preloader-part"></div>
+			<div class="bottom-part preloader-part"></div>
+		</div>
+	</div>
+</div>
+{% include 'header.html' %}
+{% include 'main.html' %}
+
+
+
 
 	{% block content %}
-    {% endblock %}
+  {% endblock %}
 
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script src="{% static 'js/libs/require.js' %}" data-main="{% static 'js/index.min' %}"></script>
